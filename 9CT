@@ -1,0 +1,26 @@
+ def add(a, b):
+    return a + b
+
+def subtract(a, b):
+    return a - b
+
+def multiply(a, b):
+    return a * b
+
+def divide(a, b):
+    if b == 0:
+        raise ValueError("Cannot divide by zero")
+    return a / b
+[22/09, 9:43 pm] +91 95855 45085: from calculator import add, subtract, multiply, divide
+
+def test_add():
+    assert add(10, 5) == 15
+
+def test_subtract():
+    assert subtract(10, 5) == 5
+
+def test_multiply():
+    assert multiply(10, 5) == 50
+
+def test_divide():
+    assert divide(10, 5) == 2
